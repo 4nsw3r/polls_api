@@ -1,0 +1,35 @@
+# примеры API-запросов
+
+# получение объявлений
+GET 127.0.0.1:8000/api/polls/
+Content-Type: application/json
+Authorization: Token 8089750f1ab4be862b52ce35ad8791b0884a0936
+
+###
+GET 127.0.0.1:8000/api/statistic/
+Content-Type: application/json
+
+###
+# создание объявления
+POST 127.0.0.1:8000/api/polls/
+Content-Type: application/json
+Authorization: Token 816a6fc12ffc6cebf5c11dd14e405aacdd910a56
+
+{
+  "title": "polls_12"
+}
+
+###
+
+# попытка поменять объявление
+PATCH 127.0.0.1:8000/api/polls/7/
+Content-Type: application/json
+Authorization: Token 8089750f1ab4be862b52ce35ad8791b0884a0936
+
+{
+  "title": "234"
+}
+
+###
+
+
